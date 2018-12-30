@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Built-By: DKSC102971
+Build-Jdk: 1.8.0_121-1-ojdkbuild
+Created-By: Maven Integration for Eclipse
+

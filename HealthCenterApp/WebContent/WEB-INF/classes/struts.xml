@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <constant name = "struts.devMode" value = "true" />
+   
+   <package name="default" namespace="/" extends="struts-default">
+   
+     <action name = "register" 
+         class = "com.healthCenter.registration.registrationPageForm" 
+         method = "register">
+         <result name = "success">/RegisterSuccessPage.jsp</result>
+         <result name = "failed">/registration.jsp</result>
+      </action>
+   
+   
+     <action name = "logIn" 
+         class = "com.healthCenter.logon.LogonForm" 
+         method = "login">
+         <result name = "true">/MyProfile.jsp</result>
+         <result name = "false">/LogonPage.jsp</result>
+      </action>
+   
+   
+<!--    <action name="myProfileAction"  -->
+<!-- 			class="com.healthCenter.myProfile.MyProfile" > -->
+<!-- 			<result name="success">/MyProfile.jsp</result> -->
+<!-- 		</action> -->
+	</package>
+</struts>
