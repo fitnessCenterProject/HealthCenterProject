@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {font-family: Gadugi;}
+
+.container
+{   border-style: solid;
+  border-width: 0.5px;
+  width: 30%;
+  padding-left: 50px;}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 10px 30px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+   }
+   button:hover {
+  opacity: 0.6;
+}
+  
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+}
+
+.cancelbtn {background-color: #f44336;} /* Red */ 
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:  #f1f1f1;
+   color: white;
+   text-align: center;
+}
+}
+</style>
+</head>
+<body>
+
+<h2>Login Page</h2>
+<br>
+  
+  <form action = "logIn">
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label> <br>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+		<br>
+      <label for="psw"><b>Password  </b></label> <br>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+          <br>
+          <button type="submit">Login</button>
+          <button class="button cancelbtn" type="reset" value="Reset">Cancel</button>
+          <br>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+             <br><br>
+     <span class="psw">Forgot your password <a href="#">click here</a></span>
+    
+    </div>
+  </form>
+</div>
+</div>
+<div class="footer">
+  <p>Begin Your Fitness Journey</p>
+</div>
+</body>
+</html>
